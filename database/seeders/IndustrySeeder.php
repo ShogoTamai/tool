@@ -38,6 +38,6 @@ class IndustrySeeder extends Seeder
             'name'=>'金融']);
         DB::table('industries')->insert([
             'id'=>'8',
-            'name'=>'その他']);
+            'name'=>'官公庁・公社・団体']);
     }
 }

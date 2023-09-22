@@ -110,7 +110,11 @@ class BusinessSeeder extends Seeder
         DB::table('businesses')->insert([
             'id'=>'24',
             'industry_id'=>'8',
-            'name'=>'その他団体・公務員']);
+            'name'=>'公社・団体']);
+        DB::table('businesses')->insert([
+            'id'=>'25',
+            'industry_id'=>'8',
+            'name'=>'官公庁']);
         
     }
 }
