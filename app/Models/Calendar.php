@@ -5,19 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Business extends Model
+class Calendar extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name',
-        'industry_id',
+        'user_id',
+        'summary',
+        'start',
+        'end',
     ];
+    public $timestamps = false;
     public function companies()   
     {
         return $this->hasMany(Company::class);  
-    }
-    public function industry()   
-    {
-        return $this->belongsTo(Industry::class);  
     }
 }

@@ -13,10 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('businesses', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('industry_id')->constrained();
-            $table->string('name');
+        Schema::table('companies', function (Blueprint $table) {
+            $table->foreignId('calendar_id')->nullable()->constrained();
         });
     }
 
@@ -27,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('businesses');
+        Schema::table('companies', function (Blueprint $table) {
+            //
+        });
     }
 };
