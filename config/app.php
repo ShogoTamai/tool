@@ -122,7 +122,7 @@ return [
     */
 
     'key' => env('APP_KEY'),
-    'google_key'-> env('GOOGLE_KEY'),
+    'google_key'=>env('GOOGLE_KEY'),
 
     'cipher' => 'AES-256-CBC',
 
