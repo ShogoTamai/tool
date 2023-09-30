@@ -57,6 +57,7 @@ class ApiController extends Controller
         //権限の指定
         $client->setScopes(Google_Service_Calendar::CALENDAR_EVENTS);
         $config = json_decode(config("app.google_key"), true);
+        //JSONファイルの指定
         $client->setAuthConfig($config);
 
         return $client;
